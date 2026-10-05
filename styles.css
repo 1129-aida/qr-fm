@@ -50,7 +50,37 @@ main{
     border-radius: 10px;
     display: grid;
     place-items: center; 
+    position: relative;
+    overflow: hidden;
 }
+
+.qrcode {
+    position: relative;
+    z-index: 1000;
+}
+
+.circle-big {
+    width: 328px;
+    height: 328px;
+    border-radius: 50%;
+    background-color: var(--qr-decoration-color);
+    position: absolute;
+    top: -175px;
+    left: -175px;
+    z-index: 2;
+}
+
+.circle-small {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background-color: var(--qr-decoration-color);
+    position: absolute;
+    top: 210px;
+    left: 120px;
+    z-index: 2;
+}
+
 
 .text {
     display: flex;
